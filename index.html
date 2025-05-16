@@ -1,17 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div class="head">
-        <h1>
-            سلام به رزومه شخصی من خوش اومدی !
-        </h1>
-        <img src="./images/nima-image.jpg" alt="عکس نیما">
-    </div>
-</body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">نیما</div>
+      <nav>
+        <a href="#about">درباره من</a>
+        <a href="#portfolio">نمونه کارها</a>
+        <a href="#contact">تماس</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>سلام من نیما هستم <span style="color: #eeeeee;">"برنامه نویس و طراح وب"</span> به رزومه من خوش اومدید!</h1>
+      <button
+        onclick="document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' })"
+      >
+        مشاهده نمونه کارها
+      </button>
+    </section>
+
+    <section class="skills" aria-label="مهارت‌ها">
+      <div class="skill-item">
+        <img
+          src="https://img.icons8.com/color/48/000000/html-5.png"
+          alt="HTML"
+        />
+        <span>HTML</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" />
+        <span>CSS</span>
+      </div>
+      <div class="skill-item">
+        <img
+          src="https://img.icons8.com/color/48/000000/javascript.png"
+          alt="JavaScript"
+        />
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-item">
+        <img
+          src="https://img.icons8.com/color/48/000000/wordpress.png"
+          alt="React"
+        />
+        <span>Wordpress</span>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <h2 style="text-align: center; margin-bottom: 20px">پروژه‌های منتخب</h2>
+      <div class="project-card">
+        <a href="https://nima-dev.ir/" target="_blank"
+          ><h3>اولین پروژه رسمی</h3>
+          <p>سایت پورتفولیو با استفاده از Wordpress</p></a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        © 2025 نیما |
+        <a
+          href="https://github.com/nima-sedghi"
+          target="_blank"
+          rel="noopener noreferrer"
+          >گیت‌هاب</a
+        >
+        |
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          >لینکدین</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
